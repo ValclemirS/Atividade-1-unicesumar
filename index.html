@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Churrasco</title>
+    <link rel="stylesheet" href="desing.css">
+    <script src="calculo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i>Calculadora de Churrasco</i></h1>
+        <div class="form-group">
+            <label for="homens"><strong>Número de Homens:</strong></label>
+            <input type="number" id="homens" min="0">
+        </div>
+        <div class="form-group">
+            <label for="mulheres"><strong>Número de Mulheres:</strong></label>
+            <input type="number" id="mulheres" min="0">
+        </div>
+        <div class="form-group">
+            <label for="criancas"><strong>Número de Crianças:</strong></label>
+            <input type="number" id="criancas" min="0">
+        </div>
+        <button onclick="calcular_valor()"> < Calcular ></button>
+        <div class="tabela_valores">
+            <table>
+                <tr>
+                    <th>itens</th>
+                    <th>homens</th>
+                    <th>mulheres</th>
+                    <th>crianças</th>
+                </tr>
+                <tr>
+                    <th>carne bovina</th>
+                    <td>500g</td>
+                    <td>300g</td>
+                    <td>200g</td>
+                </tr>
+                <tr>
+                    <th>Frango</th>
+                    <td>200g</td>
+                    <td>200g</td>
+                    <td>100g</td>
+                </tr>
+                <tr>
+                    <th>linguiça</th>
+                    <td>200g</td>
+                    <td>200g</td>
+                    <td>200g</td>
+                </tr>
+                <tr>
+                    <th>refrigerante</th>
+                    <td>300ml</td>
+                    <td>400ml</td>
+                    <td>200ml</td>
+                </tr>
+                <tr>
+                    <th>cerveja</th>
+                    <td>800ml</td>
+                    <td>500ml</td>
+                    <td>00ml</td>
+                </tr>
+            </table>
+        </div>
+        <div id="resultados">
+            <h2 style="text-align: center;">Quantidades Necessárias:</h2>
+            <p><strong id="carne"></strong></p>
+            <p><strong id="frango"></strong></p>
+            <p ><strong id="linguica"></strong></p>
+            <p ><strong id="refrigerante"></strong></p>
+            <p ><strong id="cerveja"></strong></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
